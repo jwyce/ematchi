@@ -88,10 +88,12 @@
 			{grid}
 			{found}
 			on:found={(e) => {
-				found = [...found, e.detail.emoji];
-				if (found.length === size ** 2 / 2) {
-					dispatch('win');
-				}
+				setTimeout(() => {
+					found = [...found, e.detail.emoji];
+					if (found.length === size ** 2 / 2) {
+						dispatch('win');
+					}
+				}, 1000);
 			}}
 		/>
 	</div>

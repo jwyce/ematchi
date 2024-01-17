@@ -115,7 +115,6 @@
 		font-size: 10em;
 		margin: 0;
 	}
-
 	.subtitle {
 		font-size: 2.5em;
 		margin: 0;
@@ -133,5 +132,33 @@
 		left: 50%;
 		top: 30%;
 		pointer-events: none;
+	}
+
+	@media (max-width: 800px) {
+		h1 {
+			font-size: 6em;
+		}
+
+		.subtitle {
+			font-size: 1.5em;
+		}
+
+    section {
+      font-size: 1em;
+    }
+	}
+
+	@media (max-width: 500px) {
+		h1 {
+			font-size: 4em;
+		}
+
+		.subtitle {
+			font-size: 1em;
+		}
+
+    section {
+      font-size: 0.75em;
+    }
 	}
 </style>

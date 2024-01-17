@@ -57,5 +57,6 @@
 		transform: rotateY(180deg);
 		backface-visibility: hidden;
 		pointer-events: none;
+		user-select: none;
 	}
 </style>
