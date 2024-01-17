@@ -1,0 +1,30 @@
+{
+	"name": "ematchi",
+	"short_name": "ematchi",
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#8a2be2",
+	"background_color": "#111",
+	"icons": [
+		{
+			"src": "icon534.png",
+			"sizes": "534x534",
+			"type": "image/png"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "screenshot1602x973.png",
+			"sizes": "1602x973",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Desktop"
+		},
+		{
+			"src": "screenshot359x734.png",
+			"sizes": "359x734",
+			"type": "image/png",
+			"label": "Mobile"
+		}
+	]
+}
