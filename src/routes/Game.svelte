@@ -15,6 +15,7 @@
 	let remaining = 0;
 	let duration = 0;
 	let playing = false;
+	let found_timeout: number;
 
 	export function start(level: Level) {
 		size = level.size;
@@ -87,8 +88,9 @@
 			bind:this={gridNode}
 			{grid}
 			{found}
+			{found_timeout}
 			on:found={(e) => {
-				setTimeout(() => {
+				found_timeout = setTimeout(() => {
 					found = [...found, e.detail.emoji];
 					if (found.length === size ** 2 / 2) {
 						dispatch('win');

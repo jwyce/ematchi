@@ -4,6 +4,7 @@
 
 	export let grid: string[];
 	export let found: string[];
+	export let found_timeout: number;
 
 	const dispatch = createEventDispatcher<{ found: { emoji: string } }>();
 
@@ -25,6 +26,7 @@
 			group={grid.indexOf(emoji) === idx ? 'a' : 'b'}
 			on:click={() => {
 				clearTimeout(reset_timeout);
+				clearTimeout(found_timeout);
 
 				if (a === -1 && b === -1) {
 					a = idx;
